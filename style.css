@@ -1,0 +1,84 @@
+body{
+  display: block;
+  background-color: gray;
+  margin-left: 10%;
+  margin-right: 10%;
+  filter:drop-shadow(1px 20px 20px white);
+}
+header{
+  height: 300px;
+  background-image: url("oo.jpg");
+  background-size:cover;
+  display:grid;
+}
+h2.name{
+  color:gray;
+  font-size:80px;
+  justify-self: center;
+}
+article{
+  background-color: salmon;
+  display: block;
+}
+.profile{
+  height: 700px;
+  padding: 5%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-image: url("aa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.avatar{
+  height: 70%;
+  width: 100%;
+  box-shadow:10px 10px 70px 4px black ;
+  background-image: url("1427.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.summry{
+  height: 70%;
+  width: 100%;
+  color:salmon;
+  padding-left: 5%;
+}
+.education{
+  height: 500px;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-image: url("2444.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: powderblue;
+}
+.box{
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+  "title . ."
+  ". col1 col2";
+  justify-items: center;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+  background-color: gray;
+}
+.edu1{
+  grid-area: col1;
+  border: dashed powderblue thin;
+  padding: 20px;
+}
+.edu2{
+  grid-area: col2;
+  border: dashed powderblue thin;
+  padding: 20px;
+}
+.education h1{
+  grid-area: title;
+}
